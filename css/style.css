@@ -791,6 +791,20 @@ button {
   transform: scale(1.05);
 }
 
+.footer {
+  background-color: #2e073f; /* Use your desired color */
+  color: #ffffff; /* Text color */
+  padding: 10px 0; /* Padding for top and bottom */
+  position: relative; /* Positioning */
+  bottom: 0; /* Stick to bottom */
+  width: 100%; /* Full width */
+}
+
+.footer .container {
+  max-width: 1200px; /* Optional max width */
+  margin: 0 auto; /* Center the content */
+}
+
 .text-dark-purple-light {
   color: rgb(79.5142857143, 12.1, 108.9);
 }

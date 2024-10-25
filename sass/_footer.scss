@@ -1,0 +1,13 @@
+.footer {
+    background-color: #2e073f; /* Use your desired color */
+    color: #ffffff; /* Text color */
+    padding: 10px 0; /* Padding for top and bottom */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}
+
+.footer .container {
+    max-width: 1200px; /* Optional max width */
+    margin: 0 auto; /* Center the content */
+}

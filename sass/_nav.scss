@@ -24,6 +24,7 @@ $white: #f1f6f9;
     color: $lavender;
     font-size: 1.5rem;
     font-weight: bold;
+    
     @include hover-effect($light-purple); // Apply hover effect on brand
 
     &:hover {
@@ -35,6 +36,7 @@ $white: #f1f6f9;
     color: $lavender;
     font-size: 1.1rem;
     padding: 0.5rem 1rem;
+    // padding: 10px;
     @include hover-effect($light-purple); // Apply hover effect to links
 
     &:hover {
