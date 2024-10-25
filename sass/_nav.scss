@@ -1,0 +1,77 @@
+@import 'colors';
+@import 'typography';
+
+$dark-purple: #2e073f;
+$purple: #7a1cac;
+$light-purple: #ad49e1;
+$lavender: #ebd3f8;
+$white: #f1f6f9;
+
+// Mixin for hover effects
+@mixin hover-effect($hover-color) {
+  &:hover {
+    color: $hover-color;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+// Navbar styles
+.navbar {
+  background-color: $dark-purple;
+  padding: 1rem;
+
+  .navbar-brand {
+    color: $lavender;
+    font-size: 1.5rem;
+    font-weight: bold;
+    @include hover-effect($light-purple); // Apply hover effect on brand
+
+    &:hover {
+      text-decoration: none; // Ensure no underline on hover
+    }
+  }
+
+  .nav-link {
+    color: $lavender;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    @include hover-effect($light-purple); // Apply hover effect to links
+
+    &:hover {
+      background-color: $purple; // Change background on hover
+      border-radius: 5px;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: $lavender;
+  
+    // Add Font Awesome icons for toggler
+    .navbar-toggler-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      font-size: 1.5rem;
+  
+      &:before {
+        content: "\f0c9"; // Font Awesome bars icon (hamburger)
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $lavender;
+        transition: color 0.3s ease-in-out;
+      }
+  
+      &:hover {
+        color: $light-purple; // Change color on hover
+      }
+  
+      // Change icon on collapse (open/close state)
+      &.collapsed::before {
+        content: "\f00d"; // Font Awesome times icon (close)
+      }
+    }
+  }
+  
+}

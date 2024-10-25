@@ -1,0 +1,49 @@
+
+.skill-section {
+    height: 100vh; // Full viewport height
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+}
+
+.skill-heading {
+    margin-top: 1.9rem;
+    font-size: 3rem; // Adjust as needed
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $purple;
+}
+
+.progress {
+    height: 40px; // Height of the progress bar
+    background-color:purple; // Light gray for progress track
+    border-radius: 5px; // Rounded corners
+    overflow: hidden; // Hide overflow
+    position: relative; // Position for absolute children
+    width: 100%; // Full width of the container
+}
+
+.progress-bar-custom {
+    background-color:purple; // Custom color for progress bar
+    transition: width 1s ease; // Animation transition
+    font-weight: bold; // Bold text inside progress bar
+    color: white; // Text color inside progress bar
+    position: absolute; // Absolute positioning to animate width
+    height: 100%; // Full height of the progress container
+    left: 0; // Start from the left
+    top: 0; // Align to the top
+    width: 0; // Initial width set to 0
+    animation: fillProgress 1s forwards; // Trigger animation
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0; // Start from 0 width
+    }
+    to {
+        width: var(--progress); // End at the desired width
+    }
+}

@@ -1,0 +1,37 @@
+.certificate-section {
+    min-height: 100vh; // Full height
+    background-color: #f9f9f9; // Light background color
+    padding: 60px 0; // Top and bottom padding
+    margin-top: 3rem;
+    .certificate-heading {
+        font-size: 2rem; // Font size for the heading
+        font-weight: 9rem;
+        margin-top: 2rem;
+        text-align: center; // Centered text
+         // Space below heading
+        color: $purple; // Dark purple color
+    }
+
+    .card-custom {
+        border: 2px solid #d3d3e3; // Light purple border color
+        background-color: #e6e6fa; // Light purple background color
+        border-radius: 10px; // Rounded corners
+        transition: transform 0.2s; // Add a hover effect
+
+        &:hover {
+            transform: scale(1.02); 
+            cursor: pointer;
+            background-color:$dark-purple;
+            color: $lavender;
+            transition: transform 0.2s, background-color 0.10s, color 0.2s; 
+            border: 2px solid rgb(126, 126, 174);
+            // Slightly enlarge on hover
+        }
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: 1rem;
+        color:$purple; // Dark purple color for titles
+    }
+}

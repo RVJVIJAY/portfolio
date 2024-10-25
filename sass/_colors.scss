@@ -1,0 +1,51 @@
+$colors: (
+  "dark-purple": #2E073F,
+  "purple": #7A1CAC,
+  "light-purple": #AD49E1,
+  "lavender": #EBD3F8,
+  "white":#fff,
+   "black":#000000
+);
+$dark-purple: #2e073f;
+$purple: #7a1cac;
+$light-purple: #ad49e1;
+$lavender: #ebd3f8;
+$white: #F1F6F9;
+
+
+@each $name, $value in $colors {
+    $lightened: lighten($value, 10%);
+    $darkened: darken($value, 10%);
+  
+    .text-#{$name}-light {
+      color: $lightened;
+    }
+  
+    .bg-#{$name}-light {
+      background-color: $lightened;
+    }
+    .text-#{$name}-dark {
+      color: $darkened;
+    }
+  
+    .bg-#{$name}-dark {
+      background-color: $darkened;
+    }
+  }
+
+/*   bg-light-1-color */
+
+@for $i from 1 through 4 {
+    .text-light-#{$i}-color{
+        color: lighten($purple,10%);
+    }
+    .bg-light-#{$i}-color{
+        background-color: lighten($purple, 10%);
+    }
+    .text-dark-#{$i}-color{
+        color: darken($purple,10%);
+    }
+    .bg-dark-#{$i}-color{
+        background-color: darken($purple, 10%);
+    }
+}

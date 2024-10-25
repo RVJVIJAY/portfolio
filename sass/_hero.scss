@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'typography';
+/* Hero Section Styles */
+#hero {
+    background-image: url('../img/hero.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Image will cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    color: #fff;
+  }
+  
+  /* Optional additional styles */
+  #hero .text-center h1 {
+    margin-bottom: 15px;
+    font-size: 4rem; /* Adjust size based on your preference */
+    font-weight: 700; /* Bold font for the hero title */
+  }
+  
+  #hero .text-center p {
+    font-size: 1.8rem; /* Subtitle size */
+    font-size: 2rem; /* Adjust size based on your preference */
+    font-weight: 900;
+    color:rgb(167, 63, 154);//$light-purple
+    letter-spacing: 0.09rem;
+  }
+  
+  #hero .btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    background-color:$purple ;
+    color: $white;
+     &:hover{
+        background-color: $light-purple;
+
+     }
+  }
+  
