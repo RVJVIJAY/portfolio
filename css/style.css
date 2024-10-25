@@ -483,7 +483,7 @@ button {
 
 /* Hero Section Styles */
 #hero {
-  background-image: url("../img/hero.jpg"); /* Replace with your image URL */
+  background-image: url("../img/react.jpg"); /* Replace with your image URL */
   background-size: cover; /* Image will cover the entire section */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image repetition */
@@ -494,17 +494,22 @@ button {
 
 /* Optional additional styles */
 #hero .text-center h1 {
-  margin-bottom: 15px;
+  background: linear-gradient(to right, #FFD700, #ffd7c8); /* Gold to Orange */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent to show the gradient */
   font-size: 4rem; /* Adjust size based on your preference */
-  font-weight: 700; /* Bold font for the hero title */
+  font-weight: 600; /* Bold font for the hero title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: add shadow for better readability */
 }
 
 #hero .text-center p {
-  font-size: 1.8rem; /* Subtitle size */
+  background: linear-gradient(to right, #b3f3d3, #00CED1); /* Spring Green to Dark Turquoise */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent to show the gradient */
   font-size: 2rem; /* Adjust size based on your preference */
   font-weight: 900;
-  color: rgb(167, 63, 154);
   letter-spacing: 0.09rem;
+  text-shadow: 1px 1px 3px rgba(2, 2, 2, 0.5); /* Optional: add shadow for better readability */
 }
 
 #hero .btn {
