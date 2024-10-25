@@ -621,14 +621,14 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .skill-heading {
   margin-top: 1.9rem;
   font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
   text-align: center;
   color: #7a1cac;
 }
@@ -694,6 +694,79 @@ button {
   font-size: 1rem;
   font-weight: 1rem;
   color: #7a1cac;
+}
+
+.project-section {
+  min-height: 100vh;
+  padding: 60px 0;
+  background-color: #F1F6F9;
+}
+.project-section .project-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2e073f;
+}
+.project-section .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.project-section .project-item {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #ebd3f8;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.project-section .project-item:hover {
+  background-color: #ad49e1;
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.project-section .project-item .project-title {
+  font-size: 1.7rem;
+  color: #2e073f;
+}
+.project-section .project-item .project-description {
+  color: #7a1cac;
+  margin: 10px 0 20px 0;
+  text-align: left;
+}
+.project-section .project-item .project-description:hover {
+  color: #ebd3f8;
+}
+.project-section .project-item .btn-outline-primary {
+  border: 2px solid purple;
+  background-color: #ad49e1;
+  color: #F1F6F9;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.project-section .project-item .btn-outline-primary:hover {
+  background-color: #2e073f;
+  color: #ebd3f8;
+}
+.project-section .project-all-link {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #2e073f;
+}
+.project-section .project-all-link a {
+  color: #ad49e1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.project-section .project-all-link a:hover {
+  color: #ebd3f8;
+  transform: scale(1.05);
 }
 
 .text-dark-purple-light {

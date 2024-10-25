@@ -1,0 +1,85 @@
+.project-section {
+    min-height: 100vh; // Full height for the section
+    padding: 60px 0; // Top and bottom padding
+    background-color: $white; // Section background color
+
+    .project-heading {
+        font-size: 2.5rem; // Font size for the heading
+        font-weight: $font-weight-semi-bold;
+        text-align: center; // Center heading
+        margin-bottom: 40px; // Space below heading
+        color: $dark-purple; // Dark purple color for heading
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; // Space between project items
+        align-items: center;
+    }
+
+    .project-item {
+        width: 100%;
+        max-width: 900px; // Maximum width for each project
+        text-align: center; // Center the content
+        padding: 20px;
+        border-bottom: 2px solid $lavender; // Bottom border to separate projects
+        transition: transform 0.3s, background-color 0.3s; // Smooth transition on hover
+
+        &:hover {
+            background-color: $light-purple;
+            cursor: pointer;
+            transform: translateY(-5px); // Slight lift on hover
+        }
+
+        .project-title {
+            font-size: 1.7rem; // Project title font size
+            color: $dark-purple; // Project title color
+        }
+
+        .project-description {
+            color:$purple; // Description text color
+            margin: 10px 0 20px 0; // Space around description
+            text-align: left;
+            &:hover{
+                color: $lavender;
+            }
+        }
+
+        .btn-outline-primary {
+            border: 2px solid purple;
+            background-color: $light-purple;
+    
+            // border-color: $dark-purple; // Button border color
+            color: $white; // Button text color
+            padding: 8px 20px; // Padding for the button
+            border-radius: 5px; // Rounded button edges
+            transition: background-color 0.3s, color 0.3s; // Smooth transition
+
+            &:hover {
+                background-color: $dark-purple; // Button background on hover
+                color: $lavender; // Button text color on hover
+            }
+        }
+    }
+    .project-all-link {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+        color: $dark-purple; // Custom dark purple variable
+    
+        a {
+            color: $light-purple; // Custom light purple variable
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            
+            &:hover {
+                color: $lavender; // Lighter hover effect color
+                transform: scale(1.05);  // Slight scaling on hover
+            }
+        }
+    }
+    
+}

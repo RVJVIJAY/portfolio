@@ -1,451 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VJ-Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark-purple sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-lavender" href="#">VIJAY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link text-lavender" href="#about">About</a>
-                </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-lavender" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-lavender" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-lavender" href="#certificate">Certificate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-lavender" href="#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-lavender" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand text-lavender" href="#">VIJAY</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-lavender" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lavender" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lavender" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lavender" href="#certificate"
+                >Certificate</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lavender" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-lavender" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
 
     <!-- Hero section -->
-    <section id="hero" class=" col-12 col-lg-12 d-flex justify-content-center align-items-center ">
-        <div class="text-center text-white-4">
-          <h1 class="display-3 text-lavender-dark">Hi , I am Vijay</h1>
-          <p class="lead ">React JS Developer</p>
-          <a href="../resume/resume.pdf" download="Vijay_Resume.pdf" class="btn btn-lg mt-3 custom-btn">Download Resume</a>
-        </div>
-      </section>
+    <section
+      id="hero"
+      class="col-12 col-lg-12 d-flex justify-content-center align-items-center"
+    >
+      <div class="text-center text-white-4">
+        <h1 class="display-3 text-lavender-dark">Hi , I am Vijay</h1>
+        <p class="lead">React JS Developer</p>
+        <a
+          href="../resume/resume.pdf"
+          download="Vijay_Resume.pdf"
+          class="btn btn-lg mt-3 custom-btn"
+          >Download Resume</a
+        >
+      </div>
+    </section>
 
     <!-- About Section -->
-      <section id="about" class="d-flex align-items-center">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Left Side: Image and Social Icons -->
-            <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center">
-              <!-- Image -->
-              <div class="img mb-4"> <!-- Added margin-bottom for spacing -->
-                <img src="../img/profile.jpg" alt="Vijay's Photo" class="img-fluid rounded-circle" />
-              </div>
-              <!-- Social Icons -->
-              <div class="social-icons d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/vj12/" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/RVJVIJAY" target="_blank" class="mx-2"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/v_i_j_a_y_______vj/?igsh=cTYyZGF5YmVxMDBv" target="_blank" class="mx-2"><i class="fab fa-instagram"></i></a>
-              </div>
+    <section id="about" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side: Image and Social Icons -->
+          <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center">
+            <!-- Image -->
+            <div class="img mb-4">
+              <!-- Added margin-bottom for spacing -->
+              <img
+                src="../img/profile.jpg"
+                alt="Vijay's Photo"
+                class="img-fluid rounded-circle"
+              />
             </div>
-      
-            <!-- Right Side: About Content -->
-            <div class="col-lg-6 col-md-12 text-section mt-3">
-              <h2 class="text-dark-purple">ABOUT ME</h2>
-              <p class="text-purple">
-                I'm a React Developer with a strong background in Computer Science and Information Technology, having completed both my undergraduate and postgraduate degrees with a CGPA of 8.0+.
-              </p>
-              <p class="text-lavender"><strong>📊 Problem Solving & Achievements:</strong></p>
-              <ul class="text-light-purple">
-                <li>Solved 60+ problems in areas like arrays, strings, numbers, and patterns.</li>
-                <li>Participated in several inter- and intra-college competitions, earning prizes in:</li>
-                <ul>
-                  <li>Quizzes</li>
-                  <li>Web Designing</li>
-                  <li>Paper Presentations</li>
-                  <li>Mimicry</li>
-                </ul>
-              </ul>
-              <p class="text-lavender"><strong>🛠️ Skills & Technologies:</strong></p>
-              <ul class="text-light-purple">
-                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript, Bootstrap, React.js, React Query, Redux, Ant-Design</li>
-                <li><strong>Backend:</strong> Basic knowledge in MySQL, MongoDB, Node.js, Express.js</li>
-                <li><strong>Programming Languages:</strong> Java</li>
-                <li><strong>Version control:</strong> Git</li>
-              </ul>
+            <!-- Social Icons -->
+            <div class="social-icons d-flex justify-content-center">
+              <a
+                href="https://www.linkedin.com/in/vj12/"
+                target="_blank"
+                class="mx-2"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/RVJVIJAY" target="_blank" class="mx-2"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/v_i_j_a_y_______vj/?igsh=cTYyZGF5YmVxMDBv"
+                target="_blank"
+                class="mx-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
           </div>
+
+          <!-- Right Side: About Content -->
+          <div class="col-lg-6 col-md-12 text-section mt-3">
+            <h2 class="text-dark-purple">ABOUT ME</h2>
+            <p class="text-purple">
+              I'm a React Developer with a strong background in Computer Science
+              and Information Technology, having completed both my undergraduate
+              and postgraduate degrees with a CGPA of 8.0+.
+            </p>
+            <p class="text-lavender">
+              <strong>📊 Problem Solving & Achievements:</strong>
+            </p>
+            <ul class="text-light-purple">
+              <li>
+                Solved 60+ problems in areas like arrays, strings, numbers, and
+                patterns.
+              </li>
+              <li>
+                Participated in several inter- and intra-college competitions,
+                earning prizes in:
+              </li>
+              <ul>
+                <li>Quizzes</li>
+                <li>Web Designing</li>
+                <li>Paper Presentations</li>
+                <li>Mimicry</li>
+              </ul>
+            </ul>
+            <p class="text-lavender">
+              <strong>🛠️ Skills & Technologies:</strong>
+            </p>
+            <ul class="text-light-purple">
+              <li>
+                <strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript,
+                Bootstrap, React.js, React Query, Redux, Ant-Design
+              </li>
+              <li>
+                <strong>Backend:</strong> Basic knowledge in MySQL, MongoDB,
+                Node.js, Express.js
+              </li>
+              <li><strong>Programming Languages:</strong> Java</li>
+              <li><strong>Version control:</strong> Git</li>
+            </ul>
+          </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <!-- Education -->
     <section class="container edu-section mt-2 pt-2" id="education">
       <div class="edu-heading">E D U C A T I O N</div>
       <div class="row mt-4">
-  
-          <!-- M.Sc (Computer Science) Card -->
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-              <div class="card card-custom shadow-sm">
-                  <div class="card-body d-flex">
-                      <img src="../img/thiagarajar.png" alt="Thiagarajar College" class="edu-icon">
-                      <div>
-                          <h5 class="card-title">M.Sc (Computer Science)</h5>
-                          <p>Thiagarajar College</p>
-                          <p>2022 - 2024 | CGPA: 8.42</p>
-                      </div>
-                  </div>
+        <!-- M.Sc (Computer Science) Card -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <img
+                src="../img/thiagarajar.png"
+                alt="Thiagarajar College"
+                class="edu-icon"
+              />
+              <div>
+                <h5 class="card-title">M.Sc (Computer Science)</h5>
+                <p>Thiagarajar College</p>
+                <p>2022 - 2024 | CGPA: 8.42</p>
               </div>
+            </div>
           </div>
-  
-          <!-- B.Sc (Information Technology) Card -->
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-              <div class="card card-custom shadow-sm">
-                  <div class="card-body d-flex">
-                      <img src="../img/svn.jfif" alt="NMSSVN College" class="edu-icon">
-                      <div>
-                          <h5 class="card-title">B.Sc (Information Technology)</h5>
-                          <p>NMSSVN College, Madurai</p>
-                          <p>2019 - 2022 | CGPA: 8.26</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <!-- HSC (Higher Secondary School) Card -->
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-              <div class="card card-custom shadow-sm">
-                  <div class="card-body d-flex">
-                      <img src="../img/tvs.jfif" alt="TVS Hr Sec School" class="edu-icon">
-                      <div>
-                          <h5 class="card-title">HSC</h5>
-                          <p>TVS Hr Sec School</p>
-                          <p>2018 - 2019 | Percentage: 68.16%</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <!-- SSLC (Secondary School) Card -->
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-              <div class="card card-custom shadow-sm">
-                  <div class="card-body d-flex">
-                      <img src="../img/tvs.jfif" alt="TVS Hr Sec School" class="edu-icon">
-                      <div>
-                          <h5 class="card-title">SSLC</h5>
-                          <p>TVS Hr Sec School</p>
-                          <p>2016 - 2017 | Percentage: 91%</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-      </div>
-  </section>
+        </div>
 
-  <!-- Skills -->
-  <section class="container skill-section" id="skills">
-    <div class="skill-heading">S K I L L S</div>
-    <div class="row mt-4">
+        <!-- B.Sc (Information Technology) Card -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <img
+                src="../img/svn.jfif"
+                alt="NMSSVN College"
+                class="edu-icon"
+              />
+              <div>
+                <h5 class="card-title">B.Sc (Information Technology)</h5>
+                <p>NMSSVN College, Madurai</p>
+                <p>2019 - 2022 | CGPA: 8.26</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HSC (Higher Secondary School) Card -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <img
+                src="../img/tvs.jfif"
+                alt="TVS Hr Sec School"
+                class="edu-icon"
+              />
+              <div>
+                <h5 class="card-title">HSC</h5>
+                <p>TVS Hr Sec School</p>
+                <p>2018 - 2019 | Percentage: 68.16%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SSLC (Secondary School) Card -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <img
+                src="../img/tvs.jfif"
+                alt="TVS Hr Sec School"
+                class="edu-icon"
+              />
+              <div>
+                <h5 class="card-title">SSLC</h5>
+                <p>TVS Hr Sec School</p>
+                <p>2016 - 2017 | Percentage: 91%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="container skill-section" id="skills">
+      <div class="skill-heading">S K I L L S</div>
+      <div class="row">
         <!-- Skill: HTML -->
         <div class="col-12 mb-3">
-            <label for="html" class="skill-label">HTML</label>
-            <div class="progress" id="html">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 90%; width: 90%;" 
-                     aria-valuenow="90" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">90%
-                </div>
+          <label for="html" class="skill-label">HTML</label>
+          <div class="progress" id="html">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 90%; width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              90%
             </div>
+          </div>
         </div>
         <!-- Skill: CSS -->
         <div class="col-12 mb-3">
-            <label for="css" class="skill-label">CSS</label>
-            <div class="progress" id="css">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 80%; width: 80%;" 
-                     aria-valuenow="80" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">80%
-                </div>
+          <label for="css" class="skill-label">CSS</label>
+          <div class="progress" id="css">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 80%; width: 80%"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              80%
             </div>
+          </div>
         </div>
         <!-- Skill: JavaScript -->
         <div class="col-12 mb-3">
-            <label for="javascript" class="skill-label">JavaScript</label>
-            <div class="progress" id="javascript">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 85%; width: 85%;" 
-                     aria-valuenow="85" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">85%
-                </div>
+          <label for="javascript" class="skill-label">JavaScript</label>
+          <div class="progress" id="javascript">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 85%; width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              85%
             </div>
+          </div>
         </div>
         <!-- Skill: TypeScript -->
         <div class="col-12 mb-3">
-            <label for="typescript" class="skill-label">TypeScript</label>
-            <div class="progress" id="typescript">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 75%; width: 75%;" 
-                     aria-valuenow="75" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">75%
-                </div>
+          <label for="typescript" class="skill-label">TypeScript</label>
+          <div class="progress" id="typescript">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 75%; width: 75%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              75%
             </div>
+          </div>
         </div>
         <!-- Skill: Bootstrap -->
         <div class="col-12 mb-3">
-            <label for="bootstrap" class="skill-label">Bootstrap</label>
-            <div class="progress" id="bootstrap">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 65%; width: 65%;" 
-                     aria-valuenow="65" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">65%
-                </div>
+          <label for="bootstrap" class="skill-label">Bootstrap</label>
+          <div class="progress" id="bootstrap">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 65%; width: 65%"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              65%
             </div>
+          </div>
         </div>
         <!-- Skill: React -->
         <div class="col-12 mb-3">
-            <label for="react" class="skill-label">React</label>
-            <div class="progress" id="react">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 90%; width: 90%;" 
-                     aria-valuenow="90" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">90%
-                </div>
+          <label for="react" class="skill-label">React</label>
+          <div class="progress" id="react">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 90%; width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              90%
             </div>
+          </div>
         </div>
         <!-- Skill: Java -->
         <div class="col-12 mb-3">
-            <label for="java" class="skill-label">Java</label>
-            <div class="progress" id="java">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 85%; width: 85%;" 
-                     aria-valuenow="85" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">85%
-                </div>
+          <label for="java" class="skill-label">Java</label>
+          <div class="progress" id="java">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 85%; width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              85%
             </div>
+          </div>
         </div>
         <!-- Skill: Git -->
         <div class="col-12 mb-3">
-            <label for="git" class="skill-label">Git</label>
-            <div class="progress" id="git">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 85%; width: 85%;" 
-                     aria-valuenow="85" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">85%
-                </div>
+          <label for="git" class="skill-label">Git</label>
+          <div class="progress" id="git">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 85%; width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              85%
             </div>
+          </div>
         </div>
         <!-- Skill: Node.js -->
         <div class="col-12 mb-3">
-            <label for="node" class="skill-label">Node.js</label>
-            <div class="progress" id="node">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 65%; width: 65%;" 
-                     aria-valuenow="65" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">65%
-                </div>
+          <label for="node" class="skill-label">Node.js</label>
+          <div class="progress" id="node">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 65%; width: 65%"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              65%
             </div>
+          </div>
         </div>
         <!-- Skill: Express.js -->
         <div class="col-12 mb-3">
-            <label for="express" class="skill-label">Express.js</label>
-            <div class="progress" id="express">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 70%; width: 70%;" 
-                     aria-valuenow="70" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">70%
-                </div>
+          <label for="express" class="skill-label">Express.js</label>
+          <div class="progress" id="express">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 70%; width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              70%
             </div>
+          </div>
         </div>
         <!-- Skill: MySQL -->
         <div class="col-12 mb-3">
-            <label for="mysql" class="skill-label">MySQL</label>
-            <div class="progress" id="mysql">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 85%; width: 85%;" 
-                     aria-valuenow="85" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">85%
-                </div>
+          <label for="mysql" class="skill-label">MySQL</label>
+          <div class="progress" id="mysql">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 85%; width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              85%
             </div>
+          </div>
         </div>
         <!-- Skill: MongoDB -->
         <div class="col-12 mb-3">
-            <label for="mongodb" class="skill-label">MongoDB</label>
-            <div class="progress" id="mongodb">
-                <div class="progress-bar progress-bar-custom" 
-                     role="progressbar" 
-                     style="--progress: 70%; width: 70%;" 
-                     aria-valuenow="70" 
-                     aria-valuemin="0" 
-                     aria-valuemax="100">70%
-                </div>
+          <label for="mongodb" class="skill-label">MongoDB</label>
+          <div class="progress" id="mongodb">
+            <div
+              class="progress-bar progress-bar-custom"
+              role="progressbar"
+              style="--progress: 70%; width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              70%
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<!-- Certificate -->
-
-<section class="container certificate-section " id="certificate">
-  <div class="certificate-heading">C E R T I F I C A T E S & A C H I E V E M E N T S</div>
-  <div class="row mt-4">
-
-      <!-- Certificate Card for Python -->
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <div class="card card-custom shadow-sm">
-              <div class="card-body d-flex">
-                  <div>
-                      <h5 class="card-title">Python</h5>
-                      <p>Organization: GUVI</p>
-                      <p>Contest Period: 15/08/2023</p>
-                  </div>
-              </div>
-          </div>
       </div>
+    </section>
 
-      <!-- Certificate Card for HTML -->
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <div class="card card-custom shadow-sm">
-              <div class="card-body d-flex">
-                  <div>
-                      <h5 class="card-title">HTML</h5>
-                      <p>Organization: Great Learning</p>
-                      <p>Contest Period: 10/12/2023</p>
-                  </div>
-              </div>
-          </div>
+    <!-- Certificate -->
+
+    <section class="container certificate-section" id="certificate">
+      <div class="certificate-heading">
+        C E R T I F I C A T E S & A C H I E V E M E N T S
       </div>
-
-      <!-- Certificate Card for Debugging -->
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="row mt-4">
+        <!-- Certificate Card for Python -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
           <div class="card card-custom shadow-sm">
-              <div class="card-body d-flex">
-                  <div>
-                      <h5 class="card-title">Debugging</h5>
-                      <p>Organization: Thiagarajar College</p>
-                      <p>Contest Period: 10/01/2023</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Certificate Card for Hardware Requirement -->
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <div class="card card-custom shadow-sm">
-              <div class="card-body d-flex">
-                  <div>
-                      <h5 class="card-title">Hardware Requirement</h5>
-                      <p>Organization: Thiagarajar College</p>
-                      <p>Contest Period: 28/02/2023</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Certificate Card for 400 Meter Relay -->
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <div class="card card-custom shadow-sm">
-              <div class="card-body d-flex">
-                  <div>
-                      <h5 class="card-title">400 Meter Relay</h5>
-                      <p>Organization: TVS Hr Sec School</p>
-                      <p>Contest Period: 25/07/2014</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-        <div class="card card-custom shadow-sm">
             <div class="card-body d-flex">
-                <div>
-                    <h5 class="card-title">Web Designing 2nd Prize</h5>
-                    <p>Organization: Gandhigram University</p>
-                    <p>Contest Period: 28/03/2024</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-      <div class="card card-custom shadow-sm">
-          <div class="card-body d-flex">
               <div>
-                  <h5 class="card-title">Frontend Design Webinar</h5>
-                  <p>Organization: Vinsup Academy</p>
-                  <p>Contest Period: 15/02/2024</p>
+                <h5 class="card-title">Python</h5>
+                <p>Organization: GUVI</p>
+                <p>Contest Period: 15/08/2023</p>
               </div>
+            </div>
           </div>
-      </div>
-  </div>
+        </div>
 
-  <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-    <div class="card card-custom shadow-sm">
-        <div class="card-body d-flex">
-            <div>
+        <!-- Certificate Card for HTML -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
+                <h5 class="card-title">HTML</h5>
+                <p>Organization: Great Learning</p>
+                <p>Contest Period: 10/12/2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Card for Debugging -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
+                <h5 class="card-title">Debugging</h5>
+                <p>Organization: Thiagarajar College</p>
+                <p>Contest Period: 10/01/2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Card for Hardware Requirement -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
+                <h5 class="card-title">Hardware Requirement</h5>
+                <p>Organization: Thiagarajar College</p>
+                <p>Contest Period: 28/02/2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Card for 400 Meter Relay -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
+                <h5 class="card-title">400 Meter Relay</h5>
+                <p>Organization: TVS Hr Sec School</p>
+                <p>Contest Period: 25/07/2014</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
+                <h5 class="card-title">Web Designing 2nd Prize</h5>
+                <p>Organization: Gandhigram University</p>
+                <p>Contest Period: 28/03/2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
+                <h5 class="card-title">Frontend Design Webinar</h5>
+                <p>Organization: Vinsup Academy</p>
+                <p>Contest Period: 15/02/2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="card card-custom shadow-sm">
+            <div class="card-body d-flex">
+              <div>
                 <h5 class="card-title">Data Analytics</h5>
                 <p>Organization: EduBridge</p>
                 <p>Contest Period: 08/04/2024</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <!-- Project -->
+    <section class="container project-section" id="project">
+      <div class="project-heading">P R O J E C T S</div>
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project-item">
+          <h5 class="project-title">E-KART</h5>
+          <p class="project-description">
+            This project is a real-time e-commerce application built using Vite
+            and React. It provides a user-friendly interface for browsing
+            products, managing orders, and ensuring a seamless shopping
+            experience. The backend is powered by Firebase, allowing for
+            real-time data synchronization, secure user authentication, and easy
+            database management.
+          </p>
+          <a href="https://vjkart.netlify.app/" class="btn btn-outline-primary"
+            >View Project</a
+          >
+        </div>
 
+        <!-- Project 2 -->
+        <div class="project-item">
+          <h5 class="project-title">
+            MERN CRUD MANAGER: Data Handling Simplified
+          </h5>
+          <p class="project-description">
+            This project is a simple CRUD (Create, Read, Update, Delete)
+            application built with the MERN stack. It allows users to add,
+            delete, update, and view their data. The application consists of a
+            React frontend that communicates with a Node.js and Express backend,
+            which interacts with a MongoDB database for storing and retrieving
+            data.
+          </p>
+          <a
+            href="https://github.com/RVJVIJAY/MERN-Project"
+            class="btn btn-outline-primary"
+            >View Project</a
+          >
+        </div>
 
-  
-  
-  
-      
-      
-  
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-  <script src="../js/progress.js"></script>
+        <!-- Project 3 -->
+        <div class="project-item">
+          <h5 class="project-title">
+            BRIDGING SOLUTIONS IN THE CODING COMMUNITY
+          </h5>
+          <p class="project-description">
+            Developed a collaborative tech platform enabling users to share
+            knowledge and solve problems, featuring a user-friendly interface
+            and a voting system for efficient solution identification.The platform empowers users to collaboratively overcome coding challenges and
+            expand their professional networks through efficient problem-solving features.
+          </p>
+          <a href="https://github.com/RVJVIJAY/nextjs-authentication" class="btn btn-outline-primary"
+            >View Project</a
+          >
+        </div>
+        <div class="project-all-link">
+            Explore More Projects on My GitHub: <a href="https://github.com/RVJVIJAY" target="_blank">Visit My GitHub</a>
+        </div>
+        
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="../js/progress.js"></script>
   </body>
 </html>
